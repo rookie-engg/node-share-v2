@@ -1,0 +1,17 @@
+{
+    "private": "true",
+    "scripts": {
+        "start": "electron backend/main/src/index.mjs",
+        "dev": "node dev.mjs",
+        "build-ui": "node build-ui.mjs",
+        "build-app": "node build-app.mjs"
+    },
+    "workspaces": [
+        "backend/",
+        "frontend/*"
+    ],
+    "devDependencies": {
+        "concurrently": "9.0.1",
+        "cross-env": "7.0.3"
+    }
+}

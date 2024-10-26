@@ -1,0 +1,37 @@
+{
+  "name": "backend",
+  "productName": "Node Share",
+  "version": "1.0.0",
+  "description": "My Electron application description",
+  "main": "main/src/index.mjs",
+  "scripts": {
+    "dev": "npx --yes electronmon ."
+  },
+  "devDependencies": {
+    "electron": "33.0.1"
+  },
+  "keywords": [],
+  "author": {
+    "name": "Vishal Suryawanshi",
+    "email": "102354559+rookie-engg@users.noreply.github.com"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "archiver": "7.0.1",
+    "cors": "^2.8.5",
+    "electron-settings": "^4.0.4",
+    "electron-squirrel-startup": "^1.0.1",
+    "express": "4.21.1",
+    "multer": "^1.4.5-lts.1",
+    "portfinder": "1.0.32",
+    "qrcode": "1.5.4",
+    "socket.io": "4.8.0"
+  },
+  "electronmon": {
+    "patterns": [
+      "!uploads/*",
+      "!file-server/static/*",
+      "file-server/"
+    ]
+  }
+}
